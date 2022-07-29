@@ -1,77 +1,33 @@
-# FS-App-Template
+# FullStack Academy Async Week Project - Pokédex Progressive Web App (PWA)
 
-## Setup
+## Description
 
-To use this as boilerplate, you'll need to take the following steps:
+This is a Pokédex progressive web app (PWA) that displays information on Gen I Pokémon from the Kanto region. It explores visual technologies and simple PWA creation. It utilizes Bootstrap to create a clean and customizable user interface that seamlessly adjusts for different screen sizes. AOS enhances the user experience with scrolling animations.
 
-* Don't fork or clone this repo! Instead, create a new, empty
-  directory on your machine and `git init` (or create an empty repo on
-  Github and clone it to your local machine)
+PWAs are web apps that use service workers and manifests that create experiences indistinguishable from native apps. Service workers are specialized JavaScript scripts that run in the background and act as proxies between web browsers and web servers. They aim to improve reliability by providing offline access through cached information and boost page performance by enabling features such as push notifications and background syncs. Workbox is a library that simplifies common service worker implementation and caching.
 
-* Now you will have to add the fs-app-template as a remote and merge it into your own repository.
+## Future Work
 
-```
-git remote add boilermaker git@github.com:FullstackAcademy/fs-app-template.git
-git fetch boilermaker
-git merge boilermaker/main
-git branch -m master main
-```
+- Addition of more detailed data to explore other visual technologies such as Chart.js and D3.js.
+- Addition of an evolution tree component displayed on the single Pokémon view that allows for navigation
+- Implementation of ID/name searching on the home page
+- Implementation of pagination and filtering
+- Gotta catch 'em all!
 
-## Customize
+## Technologies
 
-Now that you've got the code, follow these steps to get acclimated:
+- **Bootstrap** - Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
 
-* Update project name and description in `package.json`
-* `npm install`
-* Create two postgres databases (`MY_APP_NAME` should match the `name`
-  parameter in `package.json`):
-* These commands will create both your **development** and **test** databases
+  - **Link**: https://getbootstrap.com/docs/5.2/getting-started/introduction/
 
-```
-createdb <YOUR APP NAME HERE FROM package.json>
-createdb <YOUR APP NAME HERE FROM package.json>-test
-```
+- **AOS** - Animate On Scroll library using CSS3.
 
-* By default, running `npm test` will use your test database, while
-  regular development uses development database
+  - **Link**: https://michalsnik.github.io/aos/
 
-## Start
+- **Workbox** - A set of modules that simplify common service worker routing and caching.
 
-Sync and seed your database by running `npm run seed`. Running `npm run start:dev` will make great things happen!
+  - **Link**: https://developer.chrome.com/docs/workbox/
 
-- start:dev will both start your server and build your client side files using webpack
-- start:dev:logger is the same as start:dev, but you will see your SQL queries (can be helpful for debugging)
-- start:dev:seed will start your server and also seed your database (this is useful when you are making schema changes and you don't want to run your seed script separately)
+## Video Walkthrough
 
-
-### Heroku
-
-1.  Set up the [Heroku command line tools][heroku-cli]
-2.  `heroku login`
-3.  Add a git remote for heroku:
-
-[heroku-cli]: https://devcenter.heroku.com/articles/heroku-cli
-
-* **If you are creating a new app...**
-
-  1.  `heroku create` or `heroku create your-app-name` if you have a
-      name in mind.
-  2.  `heroku config:set JWT=<your secret here!>` to set a secret for JWT signing
-
-Database Setup
-
-  3.  `heroku addons:create heroku-postgresql:hobby-dev` to add
-      ("provision") a postgres database to your heroku dyno (This creates your production database)
-
-  4.  `heroku config:set SEED=true` to get heroku to sync and seed your database
-
-  5.   note everytime your app restarts, the database tables will be dropped and re-created. To avoid this you can `config:unset SEED`
-
-
-* **If you already have a Heroku app...**
-
-  1.  `heroku git:remote your-app-name` You'll need to be a
-      collaborator on the app.
-
-
-Now, you should be deployed!
+- **Link**:
