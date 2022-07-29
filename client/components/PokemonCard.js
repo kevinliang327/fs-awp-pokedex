@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import styled from "styled-components";
 
 const Sprite = styled.img`
@@ -49,7 +48,12 @@ export default class PokemonCard extends Component {
           <Sprite
             className="card-img-top rounded mx-auto mt-2"
             src={this.state.imageUrl}
-          ></Sprite>
+          />
+          {this.state.error ? (
+            <h6 className="mx-auto">
+              <span className="badge badge-danger mt-2">Error</span>
+            </h6>
+          ) : null}
           <div className="card-body mx-auto">
             <h6 className="card-title">
               {this.state.name
