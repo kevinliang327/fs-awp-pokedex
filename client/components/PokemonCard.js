@@ -40,7 +40,7 @@ export default class PokemonCard extends Component {
       <div className="col-md-3 col-sm-6 mb-5" data-aos="fade-up">
         <Link to={`pokemon/${this.state.pokeIndex}`}>
           <div className="pokemon-card card">
-            <h5 className="card-header">{this.state.pokeIndex}</h5>
+            <h5 className="card-header">No. {this.state.pokeIndex}</h5>
             <img
               className="sprite card-img-top rounded mx-auto mt-2"
               src={this.state.imageUrl}

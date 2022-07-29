@@ -96,7 +96,7 @@ export default class SinglePokemon extends Component {
           <div className="card-header">
             <div className="row">
               <div className="col-5">
-                <h5>{this.state.pokeIndex}</h5>
+                <h5>No. {this.state.pokeIndex}</h5>
               </div>
             </div>
           </div>
@@ -138,6 +138,12 @@ export default class SinglePokemon extends Component {
                 <div>Weight: {this.state.weight} lbs.</div>
               </div>
             </div>
+          </div>
+          <div className="card-footer text-muted">
+            Data From{" "}
+            <a href="https://pokeapi.co" target="_blank" className="card-link">
+              PokéApi
+            </a>
           </div>
         </div>
       </div>
