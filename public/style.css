@@ -1,3 +1,8 @@
+.App {
+  padding-top: 5rem;
+  min-height: 100vh;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -13,6 +18,10 @@ label {
 nav a {
   display: inline-block;
   margin: 1em;
+}
+
+.navbar {
+  background-color: #ef5450 !important;
 }
 
 form div {

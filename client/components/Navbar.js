@@ -2,11 +2,18 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { logout } from "../store";
+import styled from "styled-components";
 
 const Navbar = ({ handleClick, isLoggedIn }) => (
   <div>
-    <h1>FS-AWP-Pokédex</h1>
-
+    <nav className="navbar navbar-expand-md nav-dark bg-dark fixed-top">
+      <a
+        href=""
+        className="navbar-brand col-sm-3 col-md-2 mr-0 align-items-center"
+      >
+        FS-AWP-Pokédex
+      </a>
+    </nav>
     <hr />
   </div>
 );
