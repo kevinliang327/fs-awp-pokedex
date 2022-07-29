@@ -37,7 +37,11 @@ export default class PokemonCard extends Component {
 
   render() {
     return (
-      <div className="col-md-3 col-sm-6 mb-5" data-aos="fade-up">
+      <div
+        className="col-md-3 col-sm-6 mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <Link to={`pokemon/${this.state.pokeIndex}`}>
           <div className="pokemon-card card">
             <h5 className="card-header">No. {this.state.pokeIndex}</h5>

@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const TYPE_COLORS = {
   bug: "#B1C12E",
@@ -93,14 +96,23 @@ export default class SinglePokemon extends Component {
     return (
       <div className="col">
         <div className="card">
-          <div className="card-header">
+          <div
+            className="card-header"
+            data-aos="zoom-in-down"
+            data-aos-easing="ease-in-sine"
+          >
             <div className="row">
               <div className="col-5">
                 <h5>No. {this.state.pokeIndex}</h5>
               </div>
             </div>
           </div>
-          <div className="card-body">
+          <div
+            className="card-body"
+            data-aos="flip-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="500"
+          >
             <div className="row ">
               <div className="col-md-3">
                 <img
@@ -139,11 +151,32 @@ export default class SinglePokemon extends Component {
               </div>
             </div>
           </div>
-          <div className="card-footer text-muted">
-            Data From{" "}
-            <a href="https://pokeapi.co" target="_blank" className="card-link">
-              PokéApi
-            </a>
+          <div
+            className="card-footer text-muted"
+            data-aos="zoom-in-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="1000"
+          >
+            <div>
+              Sprite From{" "}
+              <a
+                href="https://projectpokemon.org/"
+                target="_blank"
+                className="card-link"
+              >
+                Project Pokémon
+              </a>
+            </div>
+            <div>
+              Data From{" "}
+              <a
+                href="https://pokeapi.co"
+                target="_blank"
+                className="card-link"
+              >
+                PokéApi
+              </a>
+            </div>
           </div>
         </div>
       </div>
