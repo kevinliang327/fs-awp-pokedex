@@ -10,10 +10,6 @@ import Routes from "./Routes";
 const App = () => {
   return (
     <div className="App">
-      <Navbar />
-      <div className="container">
-        <Main />
-      </div>
       <Routes />
     </div>
   );

@@ -1,8 +1,14 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import { withRouter, Route, Switch, Redirect } from "react-router-dom";
-import { Login, Signup } from "./components/AuthForm";
-import Home from "./components/Home";
+import {
+  withRouter,
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom";
+import Main from "./components/Main";
+import Navbar from "./components/Navbar";
+import SinglePokemon from "./components/SinglePokemon";
 import { me } from "./store";
 
 /**
@@ -14,9 +20,23 @@ class Routes extends Component {
   }
 
   render() {
-    const { isLoggedIn } = this.props;
-
-    return <div></div>;
+    return (
+      <Router>
+        <div>
+          <Navbar />
+          <div className="container">
+            <Switch>
+              <Route
+                exact
+                path="/pokemon/:pokeIndex"
+                component={SinglePokemon}
+              />
+              <Route exact path="/" component={Main} />
+            </Switch>
+          </div>
+        </div>
+      </Router>
+    );
   }
 }
 
