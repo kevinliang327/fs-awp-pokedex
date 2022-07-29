@@ -16,16 +16,13 @@ export default class PokemonCard extends Component {
 
     const pokeIndex = url.split("/")[url.split("/").length - 2];
     let imageUrl = `https://projectpokemon.org/images/normal-sprite/${name}.gif`;
-
     if (name === "mr-mime") {
       imageUrl = "https://projectpokemon.org/images/normal-sprite/mr.mime.gif";
     }
-
     if (name === "nidoran-f") {
       imageUrl =
         "https://projectpokemon.org/images/normal-sprite/nidoran_f.gif";
     }
-
     if (name === "nidoran-m") {
       imageUrl =
         "https://projectpokemon.org/images/normal-sprite/nidoran_m.gif";
