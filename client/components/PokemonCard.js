@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default class PokemonCard extends Component {
   state = {
@@ -36,7 +39,7 @@ export default class PokemonCard extends Component {
 
   render() {
     return (
-      <div className="col-md-3 col-sm-6 mb-5">
+      <div className="col-md-3 col-sm-6 mb-5" data-aos="fade-up">
         <div className="pokemon-card card">
           <h5 className="card-header">{this.state.pokeIndex}</h5>
           <img

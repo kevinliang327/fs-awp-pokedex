@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 import PokemonCard from "./PokemonCard";
 
