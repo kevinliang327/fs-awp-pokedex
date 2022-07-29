@@ -10,6 +10,7 @@ const Navbar = ({ handleClick, isLoggedIn }) => (
       <a
         href=""
         className="navbar-brand col-sm-3 col-md-2 mr-0 align-items-center"
+        draggable="false"
       >
         FS-AWP-Pokédex
       </a>

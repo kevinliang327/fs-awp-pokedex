@@ -45,6 +45,7 @@ export default class PokemonCard extends Component {
           <img
             className="sprite card-img-top rounded mx-auto mt-2"
             src={this.state.imageUrl}
+            draggable="false"
           />
           {this.state.error ? (
             <h6 className="mx-auto">
