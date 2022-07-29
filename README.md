@@ -31,7 +31,7 @@ PWAs are web apps that create experiences indistinguishable from native apps usi
 
 ## Video Walkthrough
 
-- **Link**:
+- **Link**: https://www.youtube.com/watch?v=lSl_mbnuhis
 
 ## Reference
 
